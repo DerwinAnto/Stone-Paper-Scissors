@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="icon" sizes="400X400" type="image/png" href="icon.png">
+
+    <title>Stone Paper Scissors - Best of 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Stone Paper Scissors - Best of 5</h1>
+    <br>
+    <br>
+    <div class="game">
+        <div class="choice-box">
+            <img src="stone.png" alt="Stone">
+            <button class="choice-btn" onclick="playGame('stone')">Choose Stone</button>
+        </div>
+        <div class="choice-box">
+            <img src="paper.png" alt="Paper">
+            <button class="choice-btn" onclick="playGame('paper')">Choose Paper</button>
+        </div>
+        <div class="choice-box">
+            <img src="scissors.png" alt="Scissors">
+            <button class="choice-btn" onclick="playGame('scissors')">Choose Scissors</button>
+        </div>
+    </div>
+    <br>
+    <div class="scoreboard">
+        <p>Player Score: <span id="playerScore">0</span></p>
+        
+        <p>Computer Score: <span id="computerScore">0</span></p>
+    </div>
+    <div class="result" id="result"></div>
+    <br>
+    <div class="winner" id="winner" style="font-size: 22px; font-weight: bold;"></div>
+
+    <br>
+
+    <div class="restart-container">
+        <button id="restartButton" onclick="restartGame()">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
